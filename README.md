@@ -10,7 +10,7 @@
 >- Абстрактний клас PaymentMethod визначає інтерфейс класу, об'єкти якого треба створювати.
 >- Конкретні класи BankPayment, PayPalPayment і CreditCardPayment представляють
 реалізацію класу PaymentMethod.
->- Клас PaymentMethodFactory визначає фабричний метод CreatePayment(), який повертає об'єкт Product.
->- Конкретні класи ConcreteCreatorA і ConcreteCreatorB - спадкоємці класу Creator, що визначають свою реалізацію методу FactoryMethod (). Причому метод FactoryMethod () кожного окремого класу-творця повертає певний конкретний тип продукту. Для кожного конкретного класу продукту визначається свій конкретний клас творця.
+>- Клас PaymentMethodFactory визначає фабричний метод CreatePayment(), який повертає об'єкти BankTransferPayment, CreditCardPayment, PaypalPayMent, в залежності вибору користувача.
+
 ##### > Абстрактна фабрика застосована для вибору способу доставки.
   
