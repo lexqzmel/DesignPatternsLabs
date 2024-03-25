@@ -8,8 +8,7 @@
 #### **Лабораторна робота №1.** 	
 ##### > Фабричний метод застосований для вибору способу оплати(адже логіка роботи підкласів однакова, а конкретний підклас з'ясовується тільки під час виконання програми).
 >- Абстрактний клас PaymentMethod визначає інтерфейс класу, об'єкти якого треба створювати.
->- Конкретні класи BankPayment, PayPalPayment і CreditCardPayment представляють
-реалізацію класу PaymentMethod.
+>- Конкретні класи BankPayment, PayPalPayment і CreditCardPayment представляють реалізацію класу PaymentMethod.
 >- Клас PaymentMethodFactory визначає фабричний метод CreatePayment(), який повертає об'єкти BankTransferPayment, CreditCardPayment, PaypalPayMent.
 >>-  У Program.cs створюється об'єкт способу оплати, використовуючи фабричний метод
 >>-   PaymentMethod paymentMethod = PaymentMethodFactory.CreatePaymentMethod(selectedPaymentMethodIndex);
