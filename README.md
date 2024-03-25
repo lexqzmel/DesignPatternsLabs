@@ -10,7 +10,7 @@
 >- Абстрактний клас PaymentMethod визначає інтерфейс класу, об'єкти якого треба створювати.
 >- Конкретні класи BankPayment, PayPalPayment і CreditCardPayment представляють реалізацію класу PaymentMethod.
 >- Клас PaymentMethodFactory визначає фабричний метод CreatePayment(), який повертає об'єкти BankTransferPayment, CreditCardPayment, PaypalPayMent.
->>-  У Program.cs створюється об'єкт способу оплати, використовуючи фабричний метод
+>- У Program.cs створюється об'єкт способу оплати, використовуючи фабричний метод
 `PaymentMethod paymentMethod = PaymentMethodFactory.CreatePaymentMethod(selectedPaymentMethodIndex);`
 ##### > Абстрактна фабрика застосована для вибору способу доставки(групує  фабрики логічно зв'язані одна з одною, а створювані об'єкти використовуються разом і є взаємопов'язаними).
 >- Абстрактний клас Delivery визначає інтерфейс для класів, об'єкти яких будуть створюватися в програмі.
